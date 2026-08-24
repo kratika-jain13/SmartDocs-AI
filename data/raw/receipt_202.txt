@@ -1,0 +1,7 @@
+Receipt No: REC-9988
+Date: 2026-08-23
+Vendor: Starbucks Coffee
+Total Amount: $12.50
+Items:
+1. Latte - $6.50
+2. Croissant - $6.00

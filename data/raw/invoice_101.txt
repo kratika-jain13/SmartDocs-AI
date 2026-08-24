@@ -1,0 +1,7 @@
+Invoice No: INV-2026-001
+Date: 2026-08-24
+Vendor: ACME Corporation
+Total Amount: $1500.00
+Items:
+1. Laptop - $1200.00
+2. Mouse - $300.00

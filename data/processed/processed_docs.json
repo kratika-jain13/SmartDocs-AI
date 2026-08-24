@@ -1,0 +1,55 @@
+[
+    {
+        "filename": "invoice_101.txt",
+        "extension": ".txt",
+        "file_type": "Text",
+        "classification": "Invoice",
+        "extracted_fields": {
+            "doc_id": "INV-2026-001",
+            "date": "2026-08-24",
+            "vendor": "ACME Corporation",
+            "total_amount": 1500.0
+        },
+        "validation": {
+            "is_valid": true,
+            "errors": []
+        }
+    },
+    {
+        "filename": "receipt_202.txt",
+        "extension": ".txt",
+        "file_type": "Text",
+        "classification": "Receipt",
+        "extracted_fields": {
+            "doc_id": "REC-9988",
+            "date": "2026-08-23",
+            "vendor": "Starbucks Coffee",
+            "total_amount": 12.5
+        },
+        "validation": {
+            "is_valid": true,
+            "errors": []
+        }
+    },
+    {
+        "filename": "unknown_303.txt",
+        "extension": ".txt",
+        "file_type": "Text",
+        "classification": "Other",
+        "extracted_fields": {
+            "doc_id": "Unknown",
+            "date": "Unknown",
+            "vendor": "Unknown",
+            "total_amount": 0.0
+        },
+        "validation": {
+            "is_valid": false,
+            "errors": [
+                "Missing Document ID",
+                "Missing Date",
+                "Missing Vendor",
+                "Total Amount must be greater than 0"
+            ]
+        }
+    }
+]
