@@ -4,3 +4,7 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 node_modules/
+data/raw/invoices/
+data/raw/forms/
+data/raw/resumes/
+data/raw/other/

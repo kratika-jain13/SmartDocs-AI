@@ -1,0 +1,22 @@
+{
+    "sources": [
+        {
+            "source_id": "rvl_cdip_subset",
+            "dataset_name": "RVL-CDIP Document Classification",
+            "provider": "hf-tuner",
+            "platform": "Hugging Face",
+            "dataset_url": "https://huggingface.co/datasets/hf-tuner/rvl-cdip-document-classification",
+            "original_dataset": "RVL-CDIP",
+            "purpose": "Document classification and document-type diversity",
+            "available_documents": 8992,
+            "available_classes": 16,
+            "planned_collection": {
+                "invoice": 500,
+                "form": 500,
+                "resume": 500,
+                "other": 500
+            },
+            "status": "planned"
+        }
+    ]
+}
