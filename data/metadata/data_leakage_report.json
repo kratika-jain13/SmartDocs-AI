@@ -1,0 +1,34 @@
+{
+  "leakage_status": "PASS",
+  "total_records": 2000,
+  "unique_records": 2000,
+  "split_counts": {
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "expected_counts": {
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "count_check": {
+    "train": "OK",
+    "val": "OK",
+    "test": "OK"
+  },
+  "filename_overlap": {
+    "pairwise_overlaps": {
+      "train_vs_val": [],
+      "train_vs_test": [],
+      "val_vs_test": []
+    },
+    "duplicate_records": [],
+    "any_overlap_detected": false
+  },
+  "content_duplicate_check": {
+    "missing_files": [],
+    "cross_split_duplicates": [],
+    "any_duplicate_detected": false
+  }
+}
