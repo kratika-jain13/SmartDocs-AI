@@ -1,0 +1,57 @@
+{
+  "file_checks": {
+    "app.py": true,
+    "models/mobilenet_v3_small_classifier_best.pth": true,
+    "scripts/model_predictor.py": true,
+    "scripts/prediction_pipeline.py": true
+  },
+  "import_checks": {
+    "prediction_pipeline_imported": true,
+    "predict_document_imported": true,
+    "model_predictor_imported": true,
+    "smartdocs_predictor_imported": true
+  },
+  "model_checks": {
+    "predictor_initialized": true,
+    "model_in_evaluation_mode": true,
+    "four_output_classes": true
+  },
+  "class_mapping_checks": {
+    "mapping_matches_expected": true
+  },
+  "prediction_checks": {
+    "sample_image_loaded": true,
+    "predicted_class_valid": true,
+    "confidence_valid": true,
+    "confidence_percentage_valid": true,
+    "all_probabilities_present": true,
+    "probabilities_valid": true,
+    "probabilities_sum_to_one": true
+  },
+  "streamlit_checks": {
+    "entry_point_exists": true
+  },
+  "report_checks": {
+    "data/metadata/final_model_verification.json": true,
+    "data/metadata/model_predictor_verification.json": true,
+    "data/metadata/prediction_pipeline_verification.json": true,
+    "data/metadata/streamlit_integration_verification.json": true,
+    "data/metadata/prediction_result_ui_verification.json": true,
+    "data/metadata/end_to_end_test_report.json": true
+  },
+  "sample_image": "data/processed/dataset/test/forms/forms_0001.png",
+  "prediction": {
+    "predicted_class": "invoices",
+    "predicted_class_index": 1,
+    "confidence": 0.8238682746887207,
+    "confidence_percentage": 82.38682746887207,
+    "probabilities": {
+      "forms": 0.16885972023010254,
+      "invoices": 0.8238682746887207,
+      "other": 0.007220501080155373,
+      "resumes": 5.1508926844689995e-05
+    }
+  },
+  "errors": [],
+  "final_status": "PASS"
+}

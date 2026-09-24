@@ -1,0 +1,57 @@
+{
+  "total_tests": 4,
+  "successful_tests": 4,
+  "failed_tests": 0,
+  "sample_results": [
+    {
+      "class_sample": "forms",
+      "input_image": "data/processed/dataset/test/forms/forms_0001.png",
+      "predicted_class": "invoices",
+      "confidence": 0.8238682746887207,
+      "probability_validation": true,
+      "status": "PASS",
+      "error": null,
+      "confidence_percentage": 82.38682746887207,
+      "validation_message": "All prediction result checks passed"
+    },
+    {
+      "class_sample": "invoices",
+      "input_image": "data/processed/dataset/test/invoices/invoices_0004.png",
+      "predicted_class": "other",
+      "confidence": 0.5390466451644897,
+      "probability_validation": true,
+      "status": "PASS",
+      "error": null,
+      "confidence_percentage": 53.904664516448975,
+      "validation_message": "All prediction result checks passed"
+    },
+    {
+      "class_sample": "other",
+      "input_image": "data/processed/dataset/test/other/other_0031.png",
+      "predicted_class": "other",
+      "confidence": 0.9252217411994934,
+      "probability_validation": true,
+      "status": "PASS",
+      "error": null,
+      "confidence_percentage": 92.52217411994934,
+      "validation_message": "All prediction result checks passed"
+    },
+    {
+      "class_sample": "resumes",
+      "input_image": "data/processed/dataset/test/resumes/resumes_0011.png",
+      "predicted_class": "other",
+      "confidence": 0.601433277130127,
+      "probability_validation": true,
+      "status": "PASS",
+      "error": null,
+      "confidence_percentage": 60.143327713012695,
+      "validation_message": "All prediction result checks passed"
+    }
+  ],
+  "invalid_input_test": {
+    "input": null,
+    "passed": true,
+    "handled_error": "image must not be None"
+  },
+  "overall_status": "PASS"
+}
