@@ -1,0 +1,76 @@
+{
+  "training_summary": {
+    "epochs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "class_names": [
+      "forms",
+      "invoices",
+      "other",
+      "resumes"
+    ],
+    "class_to_index": {
+      "forms": 0,
+      "invoices": 1,
+      "other": 2,
+      "resumes": 3
+    },
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "device": "cpu"
+  },
+  "calculated_statistics": {
+    "initial_training_accuracy": 0.242857,
+    "final_training_accuracy": 0.5,
+    "best_validation_accuracy": 0.473333,
+    "best_validation_accuracy_epoch": 5,
+    "initial_validation_loss": 1.380828,
+    "final_validation_loss": 1.153758
+  },
+  "best_epoch": 5,
+  "best_validation_accuracy": 0.473333,
+  "metric_series": {
+    "train_loss": [
+      1.384757,
+      1.35203,
+      1.28554,
+      1.179145,
+      1.153591
+    ],
+    "train_accuracy": [
+      0.242857,
+      0.302857,
+      0.388571,
+      0.477143,
+      0.5
+    ],
+    "validation_loss": [
+      1.380828,
+      1.35445,
+      1.23543,
+      1.241457,
+      1.153758
+    ],
+    "validation_accuracy": [
+      0.25,
+      0.33,
+      0.423333,
+      0.436667,
+      0.473333
+    ]
+  },
+  "plot_paths": {
+    "loss": "data/metadata/baseline_loss_curve.png",
+    "accuracy": "data/metadata/baseline_accuracy_curve.png"
+  },
+  "factual_observations": [
+    "Training accuracy changed from 0.242857 at epoch 1 to 0.500000 at epoch 5.",
+    "Validation accuracy reached its highest recorded value of 0.473333 at epoch 5.",
+    "Validation loss changed from 1.380828 at epoch 1 to 1.153758 at epoch 5.",
+    "Training loss decreased from 1.384757 to 1.153591 over the recorded epochs."
+  ]
+}

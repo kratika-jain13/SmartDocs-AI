@@ -1,0 +1,84 @@
+{
+  "training_summary": {
+    "epochs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "class_names": [
+      "forms",
+      "invoices",
+      "other",
+      "resumes"
+    ],
+    "class_to_index": {
+      "forms": 0,
+      "invoices": 1,
+      "other": 2,
+      "resumes": 3
+    },
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "device": "cpu",
+    "architecture": "torchvision.models.mobilenet_v3_small",
+    "pretrained_weights": "MobileNet_V3_Small_Weights.DEFAULT",
+    "frozen_feature_status": true
+  },
+  "calculated_statistics": {
+    "initial_training_accuracy": 0.608571,
+    "final_training_accuracy": 0.761429,
+    "best_validation_accuracy": 0.706667,
+    "best_validation_epoch": 3,
+    "initial_validation_loss": 0.919275,
+    "final_validation_loss": 0.908614,
+    "training_accuracy_at_best_validation_epoch": 0.721429,
+    "validation_loss_at_best_validation_epoch": 0.85653,
+    "training_validation_accuracy_gap_at_best_epoch": 0.014762
+  },
+  "best_epoch": 3,
+  "best_validation_accuracy": 0.706667,
+  "training_validation_accuracy_gap_at_best_epoch": 0.014762,
+  "metric_series": {
+    "train_loss": [
+      0.960542,
+      0.769986,
+      0.673001,
+      0.636998,
+      0.606328
+    ],
+    "train_accuracy": [
+      0.608571,
+      0.689286,
+      0.721429,
+      0.746429,
+      0.761429
+    ],
+    "validation_loss": [
+      0.919275,
+      0.89808,
+      0.85653,
+      0.870919,
+      0.908614
+    ],
+    "validation_accuracy": [
+      0.63,
+      0.69,
+      0.706667,
+      0.69,
+      0.68
+    ]
+  },
+  "plot_paths": {
+    "loss": "data/metadata/transfer_learning_loss_curve.png",
+    "accuracy": "data/metadata/transfer_learning_accuracy_curve.png"
+  },
+  "factual_observations": [
+    "Training accuracy changed from 0.608571 at epoch 1 to 0.761429 at epoch 5.",
+    "Validation accuracy was highest at epoch 3 with a recorded value of 0.706667.",
+    "Validation loss at the highest-validation-accuracy epoch was 0.856530.",
+    "The training-minus-validation accuracy difference at epoch 3 was 0.014762.",
+    "Validation loss changed from 0.919275 at epoch 1 to 0.908614 at epoch 5."
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "dataset_root": "data/processed/dataset",
+  "random_seed": 42,
+  "requested_samples_per_class_per_split": 2,
+  "number_of_samples_per_class": {
+    "invoices": 6,
+    "forms": 6,
+    "resumes": 6,
+    "other": 6
+  },
+  "classes_analyzed": [
+    "invoices",
+    "forms",
+    "resumes",
+    "other"
+  ],
+  "splits_analyzed": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "selected_image_filenames": {
+    "invoices": [
+      "invoices_0463.png",
+      "invoices_0083.png",
+      "invoices_0475.png",
+      "invoices_0108.png",
+      "invoices_0415.png",
+      "invoices_0016.png"
+    ],
+    "forms": [
+      "forms_0016.png",
+      "forms_0193.png",
+      "forms_0345.png",
+      "forms_0038.png",
+      "forms_0491.png",
+      "forms_0195.png"
+    ],
+    "resumes": [
+      "resumes_0180.png",
+      "resumes_0164.png",
+      "resumes_0019.png",
+      "resumes_0061.png",
+      "resumes_0456.png",
+      "resumes_0346.png"
+    ],
+    "other": [
+      "other_0102.png",
+      "other_0082.png",
+      "other_0182.png",
+      "other_0190.png",
+      "other_0205.png",
+      "other_0374.png"
+    ]
+  },
+  "selected_image_paths": {
+    "invoices": [
+      "data/processed/dataset/train/invoices/invoices_0463.png",
+      "data/processed/dataset/train/invoices/invoices_0083.png",
+      "data/processed/dataset/validation/invoices/invoices_0475.png",
+      "data/processed/dataset/validation/invoices/invoices_0108.png",
+      "data/processed/dataset/test/invoices/invoices_0415.png",
+      "data/processed/dataset/test/invoices/invoices_0016.png"
+    ],
+    "forms": [
+      "data/processed/dataset/train/forms/forms_0016.png",
+      "data/processed/dataset/train/forms/forms_0193.png",
+      "data/processed/dataset/validation/forms/forms_0345.png",
+      "data/processed/dataset/validation/forms/forms_0038.png",
+      "data/processed/dataset/test/forms/forms_0491.png",
+      "data/processed/dataset/test/forms/forms_0195.png"
+    ],
+    "resumes": [
+      "data/processed/dataset/train/resumes/resumes_0180.png",
+      "data/processed/dataset/train/resumes/resumes_0164.png",
+      "data/processed/dataset/validation/resumes/resumes_0019.png",
+      "data/processed/dataset/validation/resumes/resumes_0061.png",
+      "data/processed/dataset/test/resumes/resumes_0456.png",
+      "data/processed/dataset/test/resumes/resumes_0346.png"
+    ],
+    "other": [
+      "data/processed/dataset/train/other/other_0102.png",
+      "data/processed/dataset/train/other/other_0082.png",
+      "data/processed/dataset/validation/other/other_0182.png",
+      "data/processed/dataset/validation/other/other_0190.png",
+      "data/processed/dataset/test/other/other_0205.png",
+      "data/processed/dataset/test/other/other_0374.png"
+    ]
+  },
+  "selected_samples": {
+    "invoices": [
+      {
+        "class": "invoices",
+        "split": "train",
+        "filename": "invoices_0463.png",
+        "path": "data/processed/dataset/train/invoices/invoices_0463.png"
+      },
+      {
+        "class": "invoices",
+        "split": "train",
+        "filename": "invoices_0083.png",
+        "path": "data/processed/dataset/train/invoices/invoices_0083.png"
+      },
+      {
+        "class": "invoices",
+        "split": "validation",
+        "filename": "invoices_0475.png",
+        "path": "data/processed/dataset/validation/invoices/invoices_0475.png"
+      },
+      {
+        "class": "invoices",
+        "split": "validation",
+        "filename": "invoices_0108.png",
+        "path": "data/processed/dataset/validation/invoices/invoices_0108.png"
+      },
+      {
+        "class": "invoices",
+        "split": "test",
+        "filename": "invoices_0415.png",
+        "path": "data/processed/dataset/test/invoices/invoices_0415.png"
+      },
+      {
+        "class": "invoices",
+        "split": "test",
+        "filename": "invoices_0016.png",
+        "path": "data/processed/dataset/test/invoices/invoices_0016.png"
+      }
+    ],
+    "forms": [
+      {
+        "class": "forms",
+        "split": "train",
+        "filename": "forms_0016.png",
+        "path": "data/processed/dataset/train/forms/forms_0016.png"
+      },
+      {
+        "class": "forms",
+        "split": "train",
+        "filename": "forms_0193.png",
+        "path": "data/processed/dataset/train/forms/forms_0193.png"
+      },
+      {
+        "class": "forms",
+        "split": "validation",
+        "filename": "forms_0345.png",
+        "path": "data/processed/dataset/validation/forms/forms_0345.png"
+      },
+      {
+        "class": "forms",
+        "split": "validation",
+        "filename": "forms_0038.png",
+        "path": "data/processed/dataset/validation/forms/forms_0038.png"
+      },
+      {
+        "class": "forms",
+        "split": "test",
+        "filename": "forms_0491.png",
+        "path": "data/processed/dataset/test/forms/forms_0491.png"
+      },
+      {
+        "class": "forms",
+        "split": "test",
+        "filename": "forms_0195.png",
+        "path": "data/processed/dataset/test/forms/forms_0195.png"
+      }
+    ],
+    "resumes": [
+      {
+        "class": "resumes",
+        "split": "train",
+        "filename": "resumes_0180.png",
+        "path": "data/processed/dataset/train/resumes/resumes_0180.png"
+      },
+      {
+        "class": "resumes",
+        "split": "train",
+        "filename": "resumes_0164.png",
+        "path": "data/processed/dataset/train/resumes/resumes_0164.png"
+      },
+      {
+        "class": "resumes",
+        "split": "validation",
+        "filename": "resumes_0019.png",
+        "path": "data/processed/dataset/validation/resumes/resumes_0019.png"
+      },
+      {
+        "class": "resumes",
+        "split": "validation",
+        "filename": "resumes_0061.png",
+        "path": "data/processed/dataset/validation/resumes/resumes_0061.png"
+      },
+      {
+        "class": "resumes",
+        "split": "test",
+        "filename": "resumes_0456.png",
+        "path": "data/processed/dataset/test/resumes/resumes_0456.png"
+      },
+      {
+        "class": "resumes",
+        "split": "test",
+        "filename": "resumes_0346.png",
+        "path": "data/processed/dataset/test/resumes/resumes_0346.png"
+      }
+    ],
+    "other": [
+      {
+        "class": "other",
+        "split": "train",
+        "filename": "other_0102.png",
+        "path": "data/processed/dataset/train/other/other_0102.png"
+      },
+      {
+        "class": "other",
+        "split": "train",
+        "filename": "other_0082.png",
+        "path": "data/processed/dataset/train/other/other_0082.png"
+      },
+      {
+        "class": "other",
+        "split": "validation",
+        "filename": "other_0182.png",
+        "path": "data/processed/dataset/validation/other/other_0182.png"
+      },
+      {
+        "class": "other",
+        "split": "validation",
+        "filename": "other_0190.png",
+        "path": "data/processed/dataset/validation/other/other_0190.png"
+      },
+      {
+        "class": "other",
+        "split": "test",
+        "filename": "other_0205.png",
+        "path": "data/processed/dataset/test/other/other_0205.png"
+      },
+      {
+        "class": "other",
+        "split": "test",
+        "filename": "other_0374.png",
+        "path": "data/processed/dataset/test/other/other_0374.png"
+      }
+    ]
+  },
+  "checks": {
+    "unreadable_image_count": 0,
+    "unreadable_images": [],
+    "missing_directory_count": 0,
+    "missing_directories": [],
+    "visualization_failure_count": 0,
+    "visualization_failures": []
+  }
+}

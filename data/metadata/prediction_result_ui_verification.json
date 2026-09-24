@@ -1,0 +1,26 @@
+{
+  "prediction_result_status": "PASS",
+  "sample_image": "data/processed/dataset/test/forms/forms_0001.png",
+  "prediction": {
+    "predicted_class": "invoices",
+    "predicted_class_index": 1,
+    "confidence": 0.8238682746887207,
+    "confidence_percentage": 82.38682746887207,
+    "probabilities": {
+      "forms": 0.16885972023010254,
+      "invoices": 0.8238682746887207,
+      "other": 0.007220501080155373,
+      "resumes": 5.1508926844689995e-05
+    }
+  },
+  "validation_checks": {
+    "prediction_result_present": true,
+    "predicted_class_present": true,
+    "confidence_present": true,
+    "confidence_percentage_present": true,
+    "all_four_probabilities_present": true,
+    "probability_values_valid": true,
+    "probabilities_sum_to_one": true
+  },
+  "error": null
+}

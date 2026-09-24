@@ -1,0 +1,45 @@
+{
+  "checkpoint_path": "models/mobilenet_v3_small_classifier_best.pth",
+  "model_architecture": "torchvision.models.mobilenet_v3_small",
+  "pretrained_weights": "MobileNet_V3_Small_Weights.DEFAULT",
+  "device": "cpu",
+  "class_names": [
+    "forms",
+    "invoices",
+    "other",
+    "resumes"
+  ],
+  "class_to_index": {
+    "forms": 0,
+    "invoices": 1,
+    "other": 2,
+    "resumes": 3
+  },
+  "sample_image": "data/processed/dataset/test/forms/forms_0001.png",
+  "expected_class_index": 0,
+  "expected_class": "forms",
+  "predicted_class_index": 1,
+  "predicted_class": "invoices",
+  "confidence": 0.823868,
+  "probabilities": {
+    "forms": 0.16886,
+    "invoices": 0.823868,
+    "other": 0.007221,
+    "resumes": 5.2e-05
+  },
+  "model_output_shape": [
+    1,
+    4
+  ],
+  "verification_checks": {
+    "checkpoint_exists": true,
+    "model_in_eval_mode": true,
+    "classifier_outputs_four_classes": true,
+    "class_mapping_valid": true,
+    "probabilities_valid": true,
+    "predicted_class_valid": true,
+    "confidence_valid": true,
+    "output_shape_valid": true
+  },
+  "verification_status": "PASS"
+}

@@ -1,0 +1,82 @@
+{
+  "dataset_root": "data/processed/dataset",
+  "classes_analyzed": [
+    "invoices",
+    "forms",
+    "resumes",
+    "other"
+  ],
+  "class_statistics": {
+    "invoices": {
+      "image_count": 500,
+      "readable_image_count": 500,
+      "average_pixel_intensity": 79.583443,
+      "pixel_intensity_standard_deviation": 115.352416,
+      "average_red_channel_intensity": 79.583443,
+      "average_green_channel_intensity": 79.583443,
+      "average_blue_channel_intensity": 79.583443,
+      "average_file_size_bytes": 29241.33,
+      "minimum_file_size_bytes": 7170,
+      "maximum_file_size_bytes": 85648
+    },
+    "forms": {
+      "image_count": 500,
+      "readable_image_count": 500,
+      "average_pixel_intensity": 79.522463,
+      "pixel_intensity_standard_deviation": 114.990713,
+      "average_red_channel_intensity": 79.522463,
+      "average_green_channel_intensity": 79.522463,
+      "average_blue_channel_intensity": 79.522463,
+      "average_file_size_bytes": 29756.55,
+      "minimum_file_size_bytes": 1665,
+      "maximum_file_size_bytes": 96244
+    },
+    "resumes": {
+      "image_count": 500,
+      "readable_image_count": 500,
+      "average_pixel_intensity": 79.235665,
+      "pixel_intensity_standard_deviation": 114.099294,
+      "average_red_channel_intensity": 79.235665,
+      "average_green_channel_intensity": 79.235665,
+      "average_blue_channel_intensity": 79.235665,
+      "average_file_size_bytes": 36985.08,
+      "minimum_file_size_bytes": 2066,
+      "maximum_file_size_bytes": 109160
+    },
+    "other": {
+      "image_count": 500,
+      "readable_image_count": 500,
+      "average_pixel_intensity": 77.336559,
+      "pixel_intensity_standard_deviation": 114.390928,
+      "average_red_channel_intensity": 77.336559,
+      "average_green_channel_intensity": 77.336559,
+      "average_blue_channel_intensity": 77.336559,
+      "average_file_size_bytes": 29203.52,
+      "minimum_file_size_bytes": 3389,
+      "maximum_file_size_bytes": 95029
+    }
+  },
+  "comparison_results": {
+    "class_with_highest_average_brightness": [
+      "invoices"
+    ],
+    "class_with_lowest_average_brightness": [
+      "other"
+    ],
+    "class_with_largest_average_file_size": [
+      "resumes"
+    ],
+    "class_with_smallest_average_file_size": [
+      "other"
+    ]
+  },
+  "processing_checks": {
+    "unreadable_image_count": 0,
+    "unreadable_images": [],
+    "unsupported_file_count": 0,
+    "unsupported_files": [],
+    "missing_directory_count": 0,
+    "missing_directories": [],
+    "dataset_images_modified": false
+  }
+}

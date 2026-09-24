@@ -1,0 +1,78 @@
+{
+  "model_name": "torchvision.models.mobilenet_v3_small",
+  "checkpoint_path": "models/mobilenet_v3_small_classifier_best.pth",
+  "device": "cpu",
+  "class_names": [
+    "forms",
+    "invoices",
+    "other",
+    "resumes"
+  ],
+  "class_to_index": {
+    "forms": 0,
+    "invoices": 1,
+    "other": 2,
+    "resumes": 3
+  },
+  "total_test_samples": 300,
+  "correct_predictions": 211,
+  "incorrect_predictions": 89,
+  "test_accuracy": 0.703333,
+  "weighted_precision": 0.727425,
+  "weighted_recall": 0.703333,
+  "weighted_f1_score": 0.707703,
+  "per_class_metrics": {
+    "forms": {
+      "precision": 0.597826,
+      "recall": 0.733333,
+      "f1_score": 0.658683,
+      "support": 75
+    },
+    "invoices": {
+      "precision": 0.790323,
+      "recall": 0.653333,
+      "f1_score": 0.715328,
+      "support": 75
+    },
+    "other": {
+      "precision": 0.625,
+      "recall": 0.733333,
+      "f1_score": 0.674847,
+      "support": 75
+    },
+    "resumes": {
+      "precision": 0.896552,
+      "recall": 0.693333,
+      "f1_score": 0.781955,
+      "support": 75
+    }
+  },
+  "confusion_matrix": [
+    [
+      55,
+      9,
+      10,
+      1
+    ],
+    [
+      17,
+      49,
+      9,
+      0
+    ],
+    [
+      12,
+      3,
+      55,
+      5
+    ],
+    [
+      8,
+      1,
+      14,
+      52
+    ]
+  ],
+  "confusion_matrix_path": "data/metadata/final_confusion_matrix.png",
+  "evaluation_status": "PASS"
+}

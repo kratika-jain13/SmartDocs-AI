@@ -1,0 +1,120 @@
+{
+  "dataset_root": "data/processed/dataset",
+  "overall_statistics": {
+    "total_images": 2000,
+    "readable_images": 2000,
+    "minimum_width": 224,
+    "maximum_width": 224,
+    "minimum_height": 224,
+    "maximum_height": 224,
+    "unique_image_dimensions": [
+      "224x224"
+    ],
+    "dimension_counts": {
+      "224x224": 2000
+    },
+    "unique_color_modes": [
+      "RGB"
+    ],
+    "color_mode_counts": {
+      "RGB": 2000
+    },
+    "file_extension_counts": {
+      ".png": 2000
+    },
+    "minimum_file_size_bytes": 1665,
+    "maximum_file_size_bytes": 109160,
+    "average_file_size_bytes": 31296.62
+  },
+  "train_statistics": {
+    "total_images": 1400,
+    "readable_images": 1400,
+    "minimum_width": 224,
+    "maximum_width": 224,
+    "minimum_height": 224,
+    "maximum_height": 224,
+    "unique_image_dimensions": [
+      "224x224"
+    ],
+    "dimension_counts": {
+      "224x224": 1400
+    },
+    "unique_color_modes": [
+      "RGB"
+    ],
+    "color_mode_counts": {
+      "RGB": 1400
+    },
+    "file_extension_counts": {
+      ".png": 1400
+    },
+    "minimum_file_size_bytes": 1665,
+    "maximum_file_size_bytes": 96244,
+    "average_file_size_bytes": 31237.35
+  },
+  "validation_statistics": {
+    "total_images": 300,
+    "readable_images": 300,
+    "minimum_width": 224,
+    "maximum_width": 224,
+    "minimum_height": 224,
+    "maximum_height": 224,
+    "unique_image_dimensions": [
+      "224x224"
+    ],
+    "dimension_counts": {
+      "224x224": 300
+    },
+    "unique_color_modes": [
+      "RGB"
+    ],
+    "color_mode_counts": {
+      "RGB": 300
+    },
+    "file_extension_counts": {
+      ".png": 300
+    },
+    "minimum_file_size_bytes": 3366,
+    "maximum_file_size_bytes": 87724,
+    "average_file_size_bytes": 31381.91
+  },
+  "test_statistics": {
+    "total_images": 300,
+    "readable_images": 300,
+    "minimum_width": 224,
+    "maximum_width": 224,
+    "minimum_height": 224,
+    "maximum_height": 224,
+    "unique_image_dimensions": [
+      "224x224"
+    ],
+    "dimension_counts": {
+      "224x224": 300
+    },
+    "unique_color_modes": [
+      "RGB"
+    ],
+    "color_mode_counts": {
+      "RGB": 300
+    },
+    "file_extension_counts": {
+      ".png": 300
+    },
+    "minimum_file_size_bytes": 3858,
+    "maximum_file_size_bytes": 109160,
+    "average_file_size_bytes": 31487.92
+  },
+  "validation_checks": {
+    "unreadable_image_count": 0,
+    "unreadable_images": [],
+    "unsupported_file_count": 0,
+    "unsupported_files": [],
+    "missing_split_count": 0,
+    "missing_splits": [],
+    "inconsistent_dimensions": false,
+    "inconsistent_color_modes": false,
+    "dominant_file_extension": ".png",
+    "unexpected_file_extensions": [],
+    "has_unexpected_file_extensions": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "architecture": "torchvision.models.mobilenet_v3_small",
+  "pretrained_status": {
+    "requested": true,
+    "weights": "MobileNet_V3_Small_Weights.DEFAULT",
+    "loaded": true
+  },
+  "class_names": [
+    "forms",
+    "invoices",
+    "other",
+    "resumes"
+  ],
+  "class_to_index": {
+    "forms": 0,
+    "invoices": 1,
+    "other": 2,
+    "resumes": 3
+  },
+  "total_parameters": 1521956,
+  "trainable_parameters": 594948,
+  "frozen_feature_layers": true,
+  "device": "cpu",
+  "batch_size": 32,
+  "output_shape": [
+    32,
+    4
+  ],
+  "train_image_count": 1400,
+  "validation_image_count": 300,
+  "test_set_evaluated": false,
+  "data_augmentation": false
+}

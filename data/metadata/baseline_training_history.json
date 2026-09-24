@@ -1,0 +1,54 @@
+{
+  "epochs": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "train_loss": [
+    1.384757,
+    1.35203,
+    1.28554,
+    1.179145,
+    1.153591
+  ],
+  "train_accuracy": [
+    0.242857,
+    0.302857,
+    0.388571,
+    0.477143,
+    0.5
+  ],
+  "validation_loss": [
+    1.380828,
+    1.35445,
+    1.23543,
+    1.241457,
+    1.153758
+  ],
+  "validation_accuracy": [
+    0.25,
+    0.33,
+    0.423333,
+    0.436667,
+    0.473333
+  ],
+  "best_validation_accuracy": 0.473333,
+  "best_epoch": 5,
+  "class_names": [
+    "forms",
+    "invoices",
+    "other",
+    "resumes"
+  ],
+  "class_to_index": {
+    "forms": 0,
+    "invoices": 1,
+    "other": 2,
+    "resumes": 3
+  },
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "device": "cpu"
+}

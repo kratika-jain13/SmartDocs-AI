@@ -1,0 +1,99 @@
+{
+  "dataset_root": "data/processed/dataset",
+  "overall_statistics": {
+    "total_images": 2000,
+    "readable_images": 2000,
+    "pixel_count": 301056000,
+    "pixel_intensity_minimum": 0,
+    "pixel_intensity_maximum": 255,
+    "mean_pixel_intensity": 78.919533,
+    "standard_deviation_pixel_intensity": 114.713107,
+    "rgb_channel_statistics": {
+      "mean_R": 78.919533,
+      "mean_G": 78.919533,
+      "mean_B": 78.919533,
+      "standard_deviation_R": 114.713107,
+      "standard_deviation_G": 114.713107,
+      "standard_deviation_B": 114.713107
+    },
+    "blank_image_count": 0,
+    "dark_image_count": 1,
+    "bright_image_count": 1783
+  },
+  "train_statistics": {
+    "total_images": 1400,
+    "readable_images": 1400,
+    "pixel_count": 210739200,
+    "pixel_intensity_minimum": 0,
+    "pixel_intensity_maximum": 255,
+    "mean_pixel_intensity": 78.902157,
+    "standard_deviation_pixel_intensity": 114.747505,
+    "rgb_channel_statistics": {
+      "mean_R": 78.902157,
+      "mean_G": 78.902157,
+      "mean_B": 78.902157,
+      "standard_deviation_R": 114.747505,
+      "standard_deviation_G": 114.747505,
+      "standard_deviation_B": 114.747505
+    },
+    "blank_image_count": 0,
+    "dark_image_count": 1,
+    "bright_image_count": 1246
+  },
+  "validation_statistics": {
+    "total_images": 300,
+    "readable_images": 300,
+    "pixel_count": 45158400,
+    "pixel_intensity_minimum": 0,
+    "pixel_intensity_maximum": 255,
+    "mean_pixel_intensity": 79.250484,
+    "standard_deviation_pixel_intensity": 114.748054,
+    "rgb_channel_statistics": {
+      "mean_R": 79.250484,
+      "mean_G": 79.250484,
+      "mean_B": 79.250484,
+      "standard_deviation_R": 114.748054,
+      "standard_deviation_G": 114.748054,
+      "standard_deviation_B": 114.748054
+    },
+    "blank_image_count": 0,
+    "dark_image_count": 0,
+    "bright_image_count": 270
+  },
+  "test_statistics": {
+    "total_images": 300,
+    "readable_images": 300,
+    "pixel_count": 45158400,
+    "pixel_intensity_minimum": 0,
+    "pixel_intensity_maximum": 255,
+    "mean_pixel_intensity": 78.669667,
+    "standard_deviation_pixel_intensity": 114.516677,
+    "rgb_channel_statistics": {
+      "mean_R": 78.669667,
+      "mean_G": 78.669667,
+      "mean_B": 78.669667,
+      "standard_deviation_R": 114.516677,
+      "standard_deviation_G": 114.516677,
+      "standard_deviation_B": 114.516677
+    },
+    "blank_image_count": 0,
+    "dark_image_count": 0,
+    "bright_image_count": 267
+  },
+  "thresholds_used": {
+    "pixel_scale": "8-bit RGB intensity, 0-255",
+    "blank_image": "all RGB pixel values equal 0",
+    "dark_image_mean_intensity_less_than": 32,
+    "bright_image_mean_intensity_greater_than": 224
+  },
+  "processing_checks": {
+    "unreadable_image_count": 0,
+    "unreadable_images": [],
+    "unsupported_file_count": 0,
+    "unsupported_files": [],
+    "missing_split_count": 0,
+    "missing_splits": [],
+    "images_converted_in_memory_to_rgb": true,
+    "dataset_images_modified": false
+  }
+}

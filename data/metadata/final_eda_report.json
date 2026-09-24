@@ -1,0 +1,651 @@
+{
+  "report_title": "SmartDocs AI Phase 6 Exploratory Data Analysis",
+  "phase": "6.7 - Final EDA Report",
+  "source_reports": {
+    "dataset_statistics": "data/metadata/eda_statistics.json",
+    "class_distribution": "data/metadata/class_distribution.json",
+    "image_properties": "data/metadata/eda_image_properties.json",
+    "visual_samples": "data/metadata/eda_visual_samples.json",
+    "pixel_statistics": "data/metadata/eda_pixel_statistics.json",
+    "classwise_comparison": "data/metadata/eda_classwise_comparison.json"
+  },
+  "dataset_overview": {
+    "total_images": 2000,
+    "split_counts": {
+      "train": 1400,
+      "validation": 300,
+      "test": 300
+    },
+    "class_counts": {
+      "invoices": 500,
+      "forms": 500,
+      "resumes": 500,
+      "other": 500
+    }
+  },
+  "class_distribution": {
+    "class_counts": {
+      "train": {
+        "invoices": 350,
+        "forms": 350,
+        "resumes": 350,
+        "other": 350
+      },
+      "validation": {
+        "invoices": 75,
+        "forms": 75,
+        "resumes": 75,
+        "other": 75
+      },
+      "test": {
+        "invoices": 75,
+        "forms": 75,
+        "resumes": 75,
+        "other": 75
+      },
+      "complete_dataset": {
+        "invoices": 500,
+        "forms": 500,
+        "resumes": 500,
+        "other": 500
+      }
+    },
+    "percentages": {
+      "train": {
+        "invoices": 25.0,
+        "forms": 25.0,
+        "resumes": 25.0,
+        "other": 25.0
+      },
+      "validation": {
+        "invoices": 25.0,
+        "forms": 25.0,
+        "resumes": 25.0,
+        "other": 25.0
+      },
+      "test": {
+        "invoices": 25.0,
+        "forms": 25.0,
+        "resumes": 25.0,
+        "other": 25.0
+      },
+      "complete_dataset": {
+        "invoices": 25.0,
+        "forms": 25.0,
+        "resumes": 25.0,
+        "other": 25.0
+      }
+    },
+    "balance_status": {
+      "status": "BALANCED",
+      "is_balanced": true,
+      "balanced_within_each_split": true,
+      "balanced_in_complete_dataset": true
+    }
+  },
+  "image_properties": {
+    "dataset_root": "data/processed/dataset",
+    "overall_statistics": {
+      "total_images": 2000,
+      "readable_images": 2000,
+      "minimum_width": 224,
+      "maximum_width": 224,
+      "minimum_height": 224,
+      "maximum_height": 224,
+      "unique_image_dimensions": [
+        "224x224"
+      ],
+      "dimension_counts": {
+        "224x224": 2000
+      },
+      "unique_color_modes": [
+        "RGB"
+      ],
+      "color_mode_counts": {
+        "RGB": 2000
+      },
+      "file_extension_counts": {
+        ".png": 2000
+      },
+      "minimum_file_size_bytes": 1665,
+      "maximum_file_size_bytes": 109160,
+      "average_file_size_bytes": 31296.62
+    },
+    "train_statistics": {
+      "total_images": 1400,
+      "readable_images": 1400,
+      "minimum_width": 224,
+      "maximum_width": 224,
+      "minimum_height": 224,
+      "maximum_height": 224,
+      "unique_image_dimensions": [
+        "224x224"
+      ],
+      "dimension_counts": {
+        "224x224": 1400
+      },
+      "unique_color_modes": [
+        "RGB"
+      ],
+      "color_mode_counts": {
+        "RGB": 1400
+      },
+      "file_extension_counts": {
+        ".png": 1400
+      },
+      "minimum_file_size_bytes": 1665,
+      "maximum_file_size_bytes": 96244,
+      "average_file_size_bytes": 31237.35
+    },
+    "validation_statistics": {
+      "total_images": 300,
+      "readable_images": 300,
+      "minimum_width": 224,
+      "maximum_width": 224,
+      "minimum_height": 224,
+      "maximum_height": 224,
+      "unique_image_dimensions": [
+        "224x224"
+      ],
+      "dimension_counts": {
+        "224x224": 300
+      },
+      "unique_color_modes": [
+        "RGB"
+      ],
+      "color_mode_counts": {
+        "RGB": 300
+      },
+      "file_extension_counts": {
+        ".png": 300
+      },
+      "minimum_file_size_bytes": 3366,
+      "maximum_file_size_bytes": 87724,
+      "average_file_size_bytes": 31381.91
+    },
+    "test_statistics": {
+      "total_images": 300,
+      "readable_images": 300,
+      "minimum_width": 224,
+      "maximum_width": 224,
+      "minimum_height": 224,
+      "maximum_height": 224,
+      "unique_image_dimensions": [
+        "224x224"
+      ],
+      "dimension_counts": {
+        "224x224": 300
+      },
+      "unique_color_modes": [
+        "RGB"
+      ],
+      "color_mode_counts": {
+        "RGB": 300
+      },
+      "file_extension_counts": {
+        ".png": 300
+      },
+      "minimum_file_size_bytes": 3858,
+      "maximum_file_size_bytes": 109160,
+      "average_file_size_bytes": 31487.92
+    },
+    "validation_checks": {
+      "unreadable_image_count": 0,
+      "unreadable_images": [],
+      "unsupported_file_count": 0,
+      "unsupported_files": [],
+      "missing_split_count": 0,
+      "missing_splits": [],
+      "inconsistent_dimensions": false,
+      "inconsistent_color_modes": false,
+      "dominant_file_extension": ".png",
+      "unexpected_file_extensions": [],
+      "has_unexpected_file_extensions": false
+    }
+  },
+  "visual_sample_analysis": {
+    "random_seed": 42,
+    "samples_selected": {
+      "invoices": [
+        {
+          "class": "invoices",
+          "split": "train",
+          "filename": "invoices_0463.png",
+          "path": "data/processed/dataset/train/invoices/invoices_0463.png"
+        },
+        {
+          "class": "invoices",
+          "split": "train",
+          "filename": "invoices_0083.png",
+          "path": "data/processed/dataset/train/invoices/invoices_0083.png"
+        },
+        {
+          "class": "invoices",
+          "split": "validation",
+          "filename": "invoices_0475.png",
+          "path": "data/processed/dataset/validation/invoices/invoices_0475.png"
+        },
+        {
+          "class": "invoices",
+          "split": "validation",
+          "filename": "invoices_0108.png",
+          "path": "data/processed/dataset/validation/invoices/invoices_0108.png"
+        },
+        {
+          "class": "invoices",
+          "split": "test",
+          "filename": "invoices_0415.png",
+          "path": "data/processed/dataset/test/invoices/invoices_0415.png"
+        },
+        {
+          "class": "invoices",
+          "split": "test",
+          "filename": "invoices_0016.png",
+          "path": "data/processed/dataset/test/invoices/invoices_0016.png"
+        }
+      ],
+      "forms": [
+        {
+          "class": "forms",
+          "split": "train",
+          "filename": "forms_0016.png",
+          "path": "data/processed/dataset/train/forms/forms_0016.png"
+        },
+        {
+          "class": "forms",
+          "split": "train",
+          "filename": "forms_0193.png",
+          "path": "data/processed/dataset/train/forms/forms_0193.png"
+        },
+        {
+          "class": "forms",
+          "split": "validation",
+          "filename": "forms_0345.png",
+          "path": "data/processed/dataset/validation/forms/forms_0345.png"
+        },
+        {
+          "class": "forms",
+          "split": "validation",
+          "filename": "forms_0038.png",
+          "path": "data/processed/dataset/validation/forms/forms_0038.png"
+        },
+        {
+          "class": "forms",
+          "split": "test",
+          "filename": "forms_0491.png",
+          "path": "data/processed/dataset/test/forms/forms_0491.png"
+        },
+        {
+          "class": "forms",
+          "split": "test",
+          "filename": "forms_0195.png",
+          "path": "data/processed/dataset/test/forms/forms_0195.png"
+        }
+      ],
+      "resumes": [
+        {
+          "class": "resumes",
+          "split": "train",
+          "filename": "resumes_0180.png",
+          "path": "data/processed/dataset/train/resumes/resumes_0180.png"
+        },
+        {
+          "class": "resumes",
+          "split": "train",
+          "filename": "resumes_0164.png",
+          "path": "data/processed/dataset/train/resumes/resumes_0164.png"
+        },
+        {
+          "class": "resumes",
+          "split": "validation",
+          "filename": "resumes_0019.png",
+          "path": "data/processed/dataset/validation/resumes/resumes_0019.png"
+        },
+        {
+          "class": "resumes",
+          "split": "validation",
+          "filename": "resumes_0061.png",
+          "path": "data/processed/dataset/validation/resumes/resumes_0061.png"
+        },
+        {
+          "class": "resumes",
+          "split": "test",
+          "filename": "resumes_0456.png",
+          "path": "data/processed/dataset/test/resumes/resumes_0456.png"
+        },
+        {
+          "class": "resumes",
+          "split": "test",
+          "filename": "resumes_0346.png",
+          "path": "data/processed/dataset/test/resumes/resumes_0346.png"
+        }
+      ],
+      "other": [
+        {
+          "class": "other",
+          "split": "train",
+          "filename": "other_0102.png",
+          "path": "data/processed/dataset/train/other/other_0102.png"
+        },
+        {
+          "class": "other",
+          "split": "train",
+          "filename": "other_0082.png",
+          "path": "data/processed/dataset/train/other/other_0082.png"
+        },
+        {
+          "class": "other",
+          "split": "validation",
+          "filename": "other_0182.png",
+          "path": "data/processed/dataset/validation/other/other_0182.png"
+        },
+        {
+          "class": "other",
+          "split": "validation",
+          "filename": "other_0190.png",
+          "path": "data/processed/dataset/validation/other/other_0190.png"
+        },
+        {
+          "class": "other",
+          "split": "test",
+          "filename": "other_0205.png",
+          "path": "data/processed/dataset/test/other/other_0205.png"
+        },
+        {
+          "class": "other",
+          "split": "test",
+          "filename": "other_0374.png",
+          "path": "data/processed/dataset/test/other/other_0374.png"
+        }
+      ]
+    },
+    "selected_image_filenames": {
+      "invoices": [
+        "invoices_0463.png",
+        "invoices_0083.png",
+        "invoices_0475.png",
+        "invoices_0108.png",
+        "invoices_0415.png",
+        "invoices_0016.png"
+      ],
+      "forms": [
+        "forms_0016.png",
+        "forms_0193.png",
+        "forms_0345.png",
+        "forms_0038.png",
+        "forms_0491.png",
+        "forms_0195.png"
+      ],
+      "resumes": [
+        "resumes_0180.png",
+        "resumes_0164.png",
+        "resumes_0019.png",
+        "resumes_0061.png",
+        "resumes_0456.png",
+        "resumes_0346.png"
+      ],
+      "other": [
+        "other_0102.png",
+        "other_0082.png",
+        "other_0182.png",
+        "other_0190.png",
+        "other_0205.png",
+        "other_0374.png"
+      ]
+    },
+    "selected_image_paths": {
+      "invoices": [
+        "data/processed/dataset/train/invoices/invoices_0463.png",
+        "data/processed/dataset/train/invoices/invoices_0083.png",
+        "data/processed/dataset/validation/invoices/invoices_0475.png",
+        "data/processed/dataset/validation/invoices/invoices_0108.png",
+        "data/processed/dataset/test/invoices/invoices_0415.png",
+        "data/processed/dataset/test/invoices/invoices_0016.png"
+      ],
+      "forms": [
+        "data/processed/dataset/train/forms/forms_0016.png",
+        "data/processed/dataset/train/forms/forms_0193.png",
+        "data/processed/dataset/validation/forms/forms_0345.png",
+        "data/processed/dataset/validation/forms/forms_0038.png",
+        "data/processed/dataset/test/forms/forms_0491.png",
+        "data/processed/dataset/test/forms/forms_0195.png"
+      ],
+      "resumes": [
+        "data/processed/dataset/train/resumes/resumes_0180.png",
+        "data/processed/dataset/train/resumes/resumes_0164.png",
+        "data/processed/dataset/validation/resumes/resumes_0019.png",
+        "data/processed/dataset/validation/resumes/resumes_0061.png",
+        "data/processed/dataset/test/resumes/resumes_0456.png",
+        "data/processed/dataset/test/resumes/resumes_0346.png"
+      ],
+      "other": [
+        "data/processed/dataset/train/other/other_0102.png",
+        "data/processed/dataset/train/other/other_0082.png",
+        "data/processed/dataset/validation/other/other_0182.png",
+        "data/processed/dataset/validation/other/other_0190.png",
+        "data/processed/dataset/test/other/other_0205.png",
+        "data/processed/dataset/test/other/other_0374.png"
+      ]
+    },
+    "validation_checks": {
+      "unreadable_image_count": 0,
+      "unreadable_images": [],
+      "missing_directory_count": 0,
+      "missing_directories": [],
+      "visualization_failure_count": 0,
+      "visualization_failures": []
+    }
+  },
+  "pixel_statistics": {
+    "overall": {
+      "total_images": 2000,
+      "readable_images": 2000,
+      "pixel_count": 301056000,
+      "pixel_intensity_minimum": 0,
+      "pixel_intensity_maximum": 255,
+      "mean_pixel_intensity": 78.919533,
+      "standard_deviation_pixel_intensity": 114.713107,
+      "rgb_channel_statistics": {
+        "mean_R": 78.919533,
+        "mean_G": 78.919533,
+        "mean_B": 78.919533,
+        "standard_deviation_R": 114.713107,
+        "standard_deviation_G": 114.713107,
+        "standard_deviation_B": 114.713107
+      },
+      "blank_image_count": 0,
+      "dark_image_count": 1,
+      "bright_image_count": 1783
+    },
+    "train": {
+      "total_images": 1400,
+      "readable_images": 1400,
+      "pixel_count": 210739200,
+      "pixel_intensity_minimum": 0,
+      "pixel_intensity_maximum": 255,
+      "mean_pixel_intensity": 78.902157,
+      "standard_deviation_pixel_intensity": 114.747505,
+      "rgb_channel_statistics": {
+        "mean_R": 78.902157,
+        "mean_G": 78.902157,
+        "mean_B": 78.902157,
+        "standard_deviation_R": 114.747505,
+        "standard_deviation_G": 114.747505,
+        "standard_deviation_B": 114.747505
+      },
+      "blank_image_count": 0,
+      "dark_image_count": 1,
+      "bright_image_count": 1246
+    },
+    "validation": {
+      "total_images": 300,
+      "readable_images": 300,
+      "pixel_count": 45158400,
+      "pixel_intensity_minimum": 0,
+      "pixel_intensity_maximum": 255,
+      "mean_pixel_intensity": 79.250484,
+      "standard_deviation_pixel_intensity": 114.748054,
+      "rgb_channel_statistics": {
+        "mean_R": 79.250484,
+        "mean_G": 79.250484,
+        "mean_B": 79.250484,
+        "standard_deviation_R": 114.748054,
+        "standard_deviation_G": 114.748054,
+        "standard_deviation_B": 114.748054
+      },
+      "blank_image_count": 0,
+      "dark_image_count": 0,
+      "bright_image_count": 270
+    },
+    "test": {
+      "total_images": 300,
+      "readable_images": 300,
+      "pixel_count": 45158400,
+      "pixel_intensity_minimum": 0,
+      "pixel_intensity_maximum": 255,
+      "mean_pixel_intensity": 78.669667,
+      "standard_deviation_pixel_intensity": 114.516677,
+      "rgb_channel_statistics": {
+        "mean_R": 78.669667,
+        "mean_G": 78.669667,
+        "mean_B": 78.669667,
+        "standard_deviation_R": 114.516677,
+        "standard_deviation_G": 114.516677,
+        "standard_deviation_B": 114.516677
+      },
+      "blank_image_count": 0,
+      "dark_image_count": 0,
+      "bright_image_count": 267
+    },
+    "thresholds_used": {
+      "pixel_scale": "8-bit RGB intensity, 0-255",
+      "blank_image": "all RGB pixel values equal 0",
+      "dark_image_mean_intensity_less_than": 32,
+      "bright_image_mean_intensity_greater_than": 224
+    }
+  },
+  "classwise_comparison": {
+    "class_statistics": {
+      "invoices": {
+        "image_count": 500,
+        "readable_image_count": 500,
+        "average_pixel_intensity": 79.583443,
+        "pixel_intensity_standard_deviation": 115.352416,
+        "average_red_channel_intensity": 79.583443,
+        "average_green_channel_intensity": 79.583443,
+        "average_blue_channel_intensity": 79.583443,
+        "average_file_size_bytes": 29241.33,
+        "minimum_file_size_bytes": 7170,
+        "maximum_file_size_bytes": 85648
+      },
+      "forms": {
+        "image_count": 500,
+        "readable_image_count": 500,
+        "average_pixel_intensity": 79.522463,
+        "pixel_intensity_standard_deviation": 114.990713,
+        "average_red_channel_intensity": 79.522463,
+        "average_green_channel_intensity": 79.522463,
+        "average_blue_channel_intensity": 79.522463,
+        "average_file_size_bytes": 29756.55,
+        "minimum_file_size_bytes": 1665,
+        "maximum_file_size_bytes": 96244
+      },
+      "resumes": {
+        "image_count": 500,
+        "readable_image_count": 500,
+        "average_pixel_intensity": 79.235665,
+        "pixel_intensity_standard_deviation": 114.099294,
+        "average_red_channel_intensity": 79.235665,
+        "average_green_channel_intensity": 79.235665,
+        "average_blue_channel_intensity": 79.235665,
+        "average_file_size_bytes": 36985.08,
+        "minimum_file_size_bytes": 2066,
+        "maximum_file_size_bytes": 109160
+      },
+      "other": {
+        "image_count": 500,
+        "readable_image_count": 500,
+        "average_pixel_intensity": 77.336559,
+        "pixel_intensity_standard_deviation": 114.390928,
+        "average_red_channel_intensity": 77.336559,
+        "average_green_channel_intensity": 77.336559,
+        "average_blue_channel_intensity": 77.336559,
+        "average_file_size_bytes": 29203.52,
+        "minimum_file_size_bytes": 3389,
+        "maximum_file_size_bytes": 95029
+      }
+    },
+    "brightness_comparison": {
+      "highest_average_brightness": [
+        "invoices"
+      ],
+      "lowest_average_brightness": [
+        "other"
+      ]
+    },
+    "file_size_comparison": {
+      "largest_average_file_size": [
+        "resumes"
+      ],
+      "smallest_average_file_size": [
+        "other"
+      ]
+    }
+  },
+  "dataset_quality_checks": {
+    "unreadable_images": {
+      "count": 0,
+      "entries": []
+    },
+    "unsupported_files": {
+      "count": 0,
+      "entries": []
+    },
+    "missing_directories": {
+      "count": 0,
+      "entries": []
+    },
+    "inconsistent_dimensions": false,
+    "inconsistent_color_modes": false,
+    "unexpected_file_extensions": {
+      "count": 0,
+      "entries": []
+    },
+    "class_distribution_balanced": true,
+    "visualization_failures": {
+      "count": 0,
+      "entries": []
+    },
+    "visualizations_present": {
+      "data/metadata/class_distribution.png": true,
+      "data/metadata/eda_visual_samples.png": true,
+      "data/metadata/classwise_mean_intensity.png": true,
+      "data/metadata/classwise_file_size.png": true
+    },
+    "duplicate_and_content_issues": {
+      "duplicate_count": 0,
+      "duplicate_filename_count": 0,
+      "duplicate_content_count": 0,
+      "missing_file_count": 0,
+      "structure_issue_count": 0,
+      "structure_issues": [],
+      "missing_files": []
+    },
+    "all_required_checks_pass": true
+  },
+  "visualization_paths": [
+    "data/metadata/class_distribution.png",
+    "data/metadata/eda_visual_samples.png",
+    "data/metadata/classwise_mean_intensity.png",
+    "data/metadata/classwise_file_size.png"
+  ],
+  "final_eda_conclusions": [
+    "The dataset contains 2000 images: 1400 train, 300 validation, and 300 test.",
+    "Class distribution is balanced across the complete dataset and within each split.",
+    "All readable images have consistent dimensions and color mode.",
+    "The observed image properties are ['224x224'] with color mode(s) ['RGB'] and extension counts {'.png': 2000}.",
+    "The overall mean pixel intensity is 78.919533 with standard deviation 114.713107.",
+    "Blank, dark, and bright image counts are 0, 1, and 1783 under the documented thresholds."
+  ],
+  "phase_6_eda_complete": true
+}

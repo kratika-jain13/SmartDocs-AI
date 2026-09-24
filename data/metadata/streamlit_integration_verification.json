@@ -1,0 +1,30 @@
+{
+  "streamlit_entry_point": "app.py",
+  "predictor_import_status": true,
+  "pipeline_import_status": true,
+  "sample_image": "data/processed/dataset/test/forms/forms_0001.png",
+  "prediction": {
+    "predicted_class": "invoices",
+    "predicted_class_index": 1,
+    "confidence": 0.8238682746887207,
+    "confidence_percentage": 82.38682746887207,
+    "probabilities": {
+      "forms": 0.16885972023010254,
+      "invoices": 0.8238682746887207,
+      "other": 0.007220501080155373,
+      "resumes": 5.1508926844689995e-05
+    }
+  },
+  "integration_checks": {
+    "streamlit_entry_point_exists": true,
+    "predictor_imported": true,
+    "pipeline_imported": true,
+    "sample_image_loaded": true,
+    "prediction_result_complete": true,
+    "predicted_class_valid": true,
+    "confidence_valid": true,
+    "probabilities_valid": true
+  },
+  "error": null,
+  "verification_status": "PASS"
+}

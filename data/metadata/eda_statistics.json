@@ -1,0 +1,84 @@
+{
+  "dataset_root": "data/processed/dataset",
+  "total_images": 2000,
+  "split_counts": {
+    "train": 1400,
+    "validation": 300,
+    "test": 300
+  },
+  "category_counts": {
+    "train": {
+      "invoices": 350,
+      "forms": 350,
+      "resumes": 350,
+      "other": 350
+    },
+    "validation": {
+      "invoices": 75,
+      "forms": 75,
+      "resumes": 75,
+      "other": 75
+    },
+    "test": {
+      "invoices": 75,
+      "forms": 75,
+      "resumes": 75,
+      "other": 75
+    }
+  },
+  "category_totals": {
+    "invoices": 500,
+    "forms": 500,
+    "resumes": 500,
+    "other": 500
+  },
+  "category_distribution_by_split": {
+    "train": {
+      "invoices": 0.25,
+      "forms": 0.25,
+      "resumes": 0.25,
+      "other": 0.25
+    },
+    "validation": {
+      "invoices": 0.25,
+      "forms": 0.25,
+      "resumes": 0.25,
+      "other": 0.25
+    },
+    "test": {
+      "invoices": 0.25,
+      "forms": 0.25,
+      "resumes": 0.25,
+      "other": 0.25
+    }
+  },
+  "image_properties": {
+    "minimum_width": 224,
+    "maximum_width": 224,
+    "minimum_height": 224,
+    "maximum_height": 224,
+    "unique_image_sizes": [
+      [
+        224,
+        224
+      ]
+    ],
+    "unique_color_modes": [
+      "RGB"
+    ],
+    "file_extension_counts": {
+      ".png": 2000
+    }
+  },
+  "balance": {
+    "is_balanced": true,
+    "category_totals_balanced": true,
+    "categories_balanced_within_each_split": true
+  },
+  "image_quality": {
+    "unreadable_image_count": 0,
+    "unreadable_images": [],
+    "unsupported_file_count": 0,
+    "unsupported_files": []
+  }
+}
